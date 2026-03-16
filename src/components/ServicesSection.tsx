@@ -4,7 +4,7 @@ import baDrivewayWash from "@/assets/ba-driveway-wash.jpeg";
 import baHouseWash from "@/assets/ba-house-wash.png";
 import baRoofWash from "@/assets/ba-roof-wash.jpeg";
 import baDeckWash from "@/assets/ba-deck-wash.png";
-import baPatioWash from "@/assets/ba-patio-wash.png";
+import baWindowWash from "@/assets/ba-window-wash.jpeg";
 
 const services = [
   { icon: Droplets, title: "Pressure Washing", desc: "Driveways, walkways, patios, and decks restored to like-new condition.", img: baDrivewayWash },
