@@ -1,7 +1,7 @@
 import { Phone, MessageSquare, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-bg.jpg";
-import baDriveway from "@/assets/ba-driveway.jpg";
+import baHouseWash from "@/assets/ba-house-wash.png";
 import BeforeAfterSlider from "./BeforeAfterSlider";
 
 const HeroSection = () => {
@@ -14,7 +14,6 @@ const HeroSection = () => {
 
       <div className="relative container mx-auto px-4 py-12 md:py-20">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* Left: Copy */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -22,7 +21,7 @@ const HeroSection = () => {
             className="space-y-6"
           >
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 border border-accent/30 px-4 py-1.5 text-sm font-bold text-accent font-heading">
-              ⭐ 59 Five-Star Google Reviews
+              ⭐ 50+ Five-Star Google Reviews
             </div>
 
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold leading-[1.1] text-primary-foreground">
@@ -31,7 +30,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-xl font-body leading-relaxed">
-              Professional exterior cleaning for homes across Maple Ridge and the Lower Mainland. Fully insured, same-day response, and backed by 59 five-star Google reviews.
+              Professional exterior cleaning for homes across Maple Ridge and the Lower Mainland. Fully insured, same-day response, and backed by 50+ five-star Google reviews.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
@@ -60,7 +59,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Right: Before/After slider */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -69,10 +67,10 @@ const HeroSection = () => {
           >
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <BeforeAfterSlider
-                beforeSrc={baDriveway}
-                afterSrc={baDriveway}
-                beforeAlt="Dirty driveway before pressure washing"
-                afterAlt="Clean driveway after pressure washing"
+                beforeSrc={baHouseWash}
+                afterSrc={baHouseWash}
+                beforeAlt="Dirty house siding before pressure washing"
+                afterAlt="Clean house siding after pressure washing"
                 className="aspect-[4/3]"
               />
             </div>

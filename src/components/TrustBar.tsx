@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const items = [
   { icon: ShieldCheck, label: "Fully Insured" },
-  { icon: Star, label: "59 Five-Star Reviews" },
+  { icon: Star, label: "50+ Five-Star Reviews" },
   { icon: Clock, label: "Same-Day Response" },
   { icon: MapPin, label: "Maple Ridge & Lower Mainland" },
 ];

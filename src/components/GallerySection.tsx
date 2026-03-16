@@ -1,15 +1,19 @@
 import { motion } from "framer-motion";
 import BeforeAfterSlider from "./BeforeAfterSlider";
-import baDriveway from "@/assets/ba-driveway.jpg";
-import baHouse from "@/assets/ba-house.jpg";
-import baRoof from "@/assets/ba-roof.jpg";
-import baDeck from "@/assets/ba-deck.jpg";
+import baHouseWash from "@/assets/ba-house-wash.png";
+import baDeckWash from "@/assets/ba-deck-wash.png";
+import baPatioWash from "@/assets/ba-patio-wash.png";
+import baRoofWash from "@/assets/ba-roof-wash.jpeg";
+import baRoofWash2 from "@/assets/ba-roof-wash2.jpeg";
+import baDrivewayWash from "@/assets/ba-driveway-wash.jpeg";
 
 const gallery = [
-  { before: baDriveway, after: baDriveway, title: "Driveway Cleaning" },
-  { before: baHouse, after: baHouse, title: "House Washing" },
-  { before: baRoof, after: baRoof, title: "Roof Cleaning" },
-  { before: baDeck, after: baDeck, title: "Deck Restoration" },
+  { before: baHouseWash, after: baHouseWash, title: "House Washing" },
+  { before: baDeckWash, after: baDeckWash, title: "Deck Restoration" },
+  { before: baPatioWash, after: baPatioWash, title: "Patio Cleaning" },
+  { before: baRoofWash, after: baRoofWash, title: "Roof Cleaning" },
+  { before: baRoofWash2, after: baRoofWash2, title: "Moss Removal" },
+  { before: baDrivewayWash, after: baDrivewayWash, title: "Driveway Cleaning" },
 ];
 
 const GallerySection = () => (
@@ -30,7 +34,7 @@ const GallerySection = () => (
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {gallery.map((item, i) => (
           <motion.div
             key={item.title}

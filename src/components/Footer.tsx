@@ -7,7 +7,7 @@ const Footer = () => (
         <div>
           <h3 className="font-heading text-xl font-extrabold mb-3">APEX PRESSURE WASHING</h3>
           <p className="text-primary-foreground/60 text-sm leading-relaxed">
-            Professional exterior cleaning services for Maple Ridge and the Lower Mainland. Fully insured with 59 five-star Google reviews.
+            Professional exterior cleaning services for Maple Ridge and the Lower Mainland. Fully insured with 50+ five-star Google reviews.
           </p>
         </div>
         <div>

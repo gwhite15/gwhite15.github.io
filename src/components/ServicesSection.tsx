@@ -1,17 +1,17 @@
 import { Droplets, Home, Umbrella, Leaf, Eye } from "lucide-react";
 import { motion } from "framer-motion";
-import baDriveway from "@/assets/ba-driveway.jpg";
-import baHouse from "@/assets/ba-house.jpg";
-import baRoof from "@/assets/ba-roof.jpg";
-import baDeck from "@/assets/ba-deck.jpg";
-import beforeAfter from "@/assets/before-after.jpg";
+import baDrivewayWash from "@/assets/ba-driveway-wash.jpeg";
+import baHouseWash from "@/assets/ba-house-wash.png";
+import baRoofWash from "@/assets/ba-roof-wash.jpeg";
+import baDeckWash from "@/assets/ba-deck-wash.png";
+import baPatioWash from "@/assets/ba-patio-wash.png";
 
 const services = [
-  { icon: Droplets, title: "Pressure Washing", desc: "Driveways, walkways, patios, and decks restored to like-new condition.", img: baDriveway },
-  { icon: Home, title: "House Washing", desc: "Gentle soft-wash that removes years of dirt, mildew, and stains.", img: baHouse },
-  { icon: Umbrella, title: "Roof Washing", desc: "Safe, low-pressure cleaning that extends the life of your roof.", img: baRoof },
-  { icon: Leaf, title: "Moss Removal", desc: "Eliminate moss and algae from roofs, walkways, and walls.", img: baDeck },
-  { icon: Eye, title: "Window Cleaning", desc: "Crystal-clear windows inside and out for maximum curb appeal.", img: beforeAfter },
+  { icon: Droplets, title: "Pressure Washing", desc: "Driveways, walkways, patios, and decks restored to like-new condition.", img: baDrivewayWash },
+  { icon: Home, title: "House Washing", desc: "Gentle soft-wash that removes years of dirt, mildew, and stains.", img: baHouseWash },
+  { icon: Umbrella, title: "Roof Washing", desc: "Safe, low-pressure cleaning that extends the life of your roof.", img: baRoofWash },
+  { icon: Leaf, title: "Moss Removal", desc: "Eliminate moss and algae from roofs, walkways, and walls.", img: baDeckWash },
+  { icon: Eye, title: "Window Cleaning", desc: "Crystal-clear windows inside and out for maximum curb appeal.", img: baPatioWash },
 ];
 
 const ServicesSection = () => (
