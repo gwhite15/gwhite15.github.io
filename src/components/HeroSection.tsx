@@ -31,7 +31,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-xl font-body leading-relaxed">
-              Professional exterior cleaning for homes across Maple Ridge and the Lower Mainland. Fully insured, same-day response, and backed by 59 five-star Google reviews.
+              Professional exterior cleaning for homes across Maple Ridge and the Lower Mainland. Fully insured, same-day response, and backed by 50+ five-star Google reviews.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-1">
