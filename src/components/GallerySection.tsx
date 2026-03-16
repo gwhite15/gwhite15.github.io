@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
-import BeforeAfterSlider from "./BeforeAfterSlider";
 import baHouseWash from "@/assets/ba-house-wash.png";
 import baDeckWash from "@/assets/ba-deck-wash.png";
 import baPatioWash from "@/assets/ba-patio-wash.png";
 import baRoofWash from "@/assets/ba-roof-wash.jpeg";
 import baRoofWash2 from "@/assets/ba-roof-wash2.jpeg";
 import baDrivewayWash from "@/assets/ba-driveway-wash.jpeg";
+import baWindowWash from "@/assets/ba-window-wash.jpeg";
 
 const gallery = [
-  { before: baHouseWash, after: baHouseWash, title: "House Washing" },
-  { before: baDeckWash, after: baDeckWash, title: "Deck Restoration" },
-  { before: baPatioWash, after: baPatioWash, title: "Patio Cleaning" },
-  { before: baRoofWash, after: baRoofWash, title: "Roof Cleaning" },
-  { before: baRoofWash2, after: baRoofWash2, title: "Moss Removal" },
-  { before: baDrivewayWash, after: baDrivewayWash, title: "Driveway Cleaning" },
+  { src: baHouseWash, title: "House Washing" },
+  { src: baDeckWash, title: "Deck Restoration" },
+  { src: baPatioWash, title: "Patio Cleaning" },
+  { src: baRoofWash, title: "Roof Cleaning" },
+  { src: baRoofWash2, title: "Moss Removal" },
+  { src: baDrivewayWash, title: "Driveway Cleaning" },
+  { src: baWindowWash, title: "Window Cleaning" },
 ];
 
 const GallerySection = () => (
@@ -30,27 +31,30 @@ const GallerySection = () => (
           See the Transformation
         </h2>
         <p className="mt-4 text-muted-foreground text-lg">
-          Drag the slider to see real results from homes across Maple Ridge.
+          Real results from homes across Maple Ridge and the Lower Mainland.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {gallery.map((item, i) => (
           <motion.div
             key={item.title}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
+            transition={{ duration: 0.5, delay: i * 0.08 }}
+            className="group rounded-2xl overflow-hidden bg-card"
+            style={{ boxShadow: "var(--shadow-card)" }}
           >
-            <BeforeAfterSlider
-              beforeSrc={item.before}
-              afterSrc={item.after}
-              beforeAlt={`${item.title} before`}
-              afterAlt={`${item.title} after`}
-              className="aspect-[4/3]"
-            />
-            <p className="font-heading font-bold text-foreground text-center mt-3">{item.title}</p>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={item.src}
+                alt={`${item.title} before and after`}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </div>
+            <p className="font-heading font-bold text-foreground text-center py-3">{item.title}</p>
           </motion.div>
         ))}
       </div>

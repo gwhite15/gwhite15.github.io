@@ -11,7 +11,7 @@ const services = [
   { icon: Home, title: "House Washing", desc: "Gentle soft-wash that removes years of dirt, mildew, and stains.", img: baHouseWash },
   { icon: Umbrella, title: "Roof Washing", desc: "Safe, low-pressure cleaning that extends the life of your roof.", img: baRoofWash },
   { icon: Leaf, title: "Moss Removal", desc: "Eliminate moss and algae from roofs, walkways, and walls.", img: baDeckWash },
-  { icon: Eye, title: "Window Cleaning", desc: "Crystal-clear windows inside and out for maximum curb appeal.", img: baPatioWash },
+  { icon: Eye, title: "Window Cleaning", desc: "Crystal-clear windows inside and out for maximum curb appeal.", img: baWindowWash },
 ];
 
 const ServicesSection = () => (
