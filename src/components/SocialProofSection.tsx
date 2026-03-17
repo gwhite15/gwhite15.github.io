@@ -60,7 +60,8 @@ const SocialProofSection = () => {
                 <s.icon className="h-7 w-7 text-accent" />
               </div>
               <p className="font-heading text-3xl md:text-4xl font-extrabold text-primary-foreground">
-                {counters[i].count}{s.suffix}
+                {s.value === 0 ? s.label : `${counters[i].count}${s.suffix}`}
+              </p>
               </p>
               <p className="text-primary-foreground/70 text-sm font-medium mt-1">{s.label}</p>
             </motion.div>
