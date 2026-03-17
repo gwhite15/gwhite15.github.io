@@ -23,8 +23,8 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold leading-[1.1] text-primary-foreground">
-              Pressure Washing in Maple Ridge That Makes Your Home{" "}
-              <span style={{ color: "hsl(200, 85%, 70%)" }}>Look New Again</span>
+              Pressure Washing in Maple Ridge & the Lower Mainland That Makes Your Home{" "}
+               <span style={{ color: "hsl(200, 85%, 70%)" }}>Look New Again</span>
             </h1>
 
             <p className="text-base md:text-lg text-primary-foreground/80 max-w-xl font-body leading-relaxed">
