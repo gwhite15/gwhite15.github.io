@@ -1,8 +1,6 @@
 import { Phone, MessageSquare, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-bg.jpg";
-import baHouseWash from "@/assets/ba-house-wash.png";
-import BeforeAfterSlider from "./BeforeAfterSlider";
 
 const HeroSection = () => {
   return (
@@ -13,7 +11,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative container mx-auto px-4 py-12 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,22 +57,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="hidden lg:block"
-          >
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <BeforeAfterSlider
-                beforeSrc={baHouseWash}
-                afterSrc={baHouseWash}
-                beforeAlt="Dirty house siding before pressure washing"
-                afterAlt="Clean house siding after pressure washing"
-                className="aspect-[4/3]"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
