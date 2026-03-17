@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Home, Star, ThumbsUp, Clock } from "lucide-react";
+import { GraduationCap, Star, ThumbsUp, Clock } from "lucide-react";
 
 const useCountUp = (end: number, duration = 2000) => {
   const [count, setCount] = useState(0);
@@ -33,7 +33,7 @@ const useCountUp = (end: number, duration = 2000) => {
 };
 
 const stats = [
-  { icon: Home, value: 500, suffix: "+", label: "Homes Cleaned" },
+  { icon: GraduationCap, value: 0, suffix: "", label: "Student Led" },
   { icon: Star, value: 50, suffix: "+", label: "5-Star Reviews" },
   { icon: ThumbsUp, value: 100, suffix: "%", label: "Satisfaction Rate" },
   { icon: Clock, value: 24, suffix: "hr", label: "Response Time" },
@@ -60,9 +60,11 @@ const SocialProofSection = () => {
                 <s.icon className="h-7 w-7 text-accent" />
               </div>
               <p className="font-heading text-3xl md:text-4xl font-extrabold text-primary-foreground">
-                {counters[i].count}{s.suffix}
+                {s.value === 0 ? s.label : `${counters[i].count}${s.suffix}`}
               </p>
-              <p className="text-primary-foreground/70 text-sm font-medium mt-1">{s.label}</p>
+              {s.value !== 0 && (
+                <p className="text-primary-foreground/70 text-sm font-medium mt-1">{s.label}</p>
+              )}
             </motion.div>
           ))}
         </div>
