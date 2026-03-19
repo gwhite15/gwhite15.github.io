@@ -26,8 +26,8 @@ const Footer = () => (
             <a href="tel:7789960414" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
               <Phone className="h-4 w-4" /> 778-996-0414
             </a>
-            <a href="mailto:apexpressurewashing604@gmail.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
-              <Mail className="h-4 w-4" /> apexpressurewashing604@gmail.com
+            <a href="mailto:griffsw14@gmail.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+              <Mail className="h-4 w-4" /> griffsw14@gmail.com
             </a>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" /> Maple Ridge & Lower Mainland
